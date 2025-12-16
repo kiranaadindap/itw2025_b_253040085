@@ -125,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: ".";
+  content: "";
   content: none;
 }
 
@@ -134,18 +134,17 @@ table {
   border-spacing: 0;
 }
 
-/* style */
-
+/* Style */
 body {
-  font: 16px/28px arial, sans-serif;
-  background-image: url(img/backgroundDaun.png);
-  color: #333;
+  font: 16px/28px Arial, sans-serif;
+  background-color: #eaeaea;
+  background-image: url(img/backgroundB.png);
 }
 
 .container {
-  width: 900px;
+  width: 800px;
   margin: auto;
-  background-color: #fff;
+  background-color: white;
 }
 
 .header {
@@ -166,100 +165,62 @@ body {
 
 .header a {
   text-decoration: none;
-  color: salmon;
+  color: #7a6363;
   padding: 3px;
 }
 
 .header a:hover {
-  background-color: lightskyblue;
+  background-color: rgb(245, 188, 188);
   color: white;
 }
 
 .hero {
-  height: 320px;
-  background-image: url(img/hero.jpg);
+  height: 300px;
+  background-image: url(img/heroB.jpg);
   background-size: cover;
-  background-position: 0 -230px;
-  border-bottom: 5px solid lightskyblue;
-  border-top: 5px solid salmon;
+  background-position: 0 -140px;
+  border-bottom: 5px solid rgb(123, 110, 108);
+  border-top: 5px solid rgb(123, 110, 108);
 }
 
-.main {
-  width: 560px;
+.content {
   padding: 20px;
-  box-sizing: border-box;
-  float: left;
 }
 
-.main h2 {
-  font-size: 32px;
+.content h2 {
+  font-size: 28px;
   font-weight: bold;
+  color: #7a6363;
 }
 
-.main .penulis {
+.content .penulis {
   font-size: 11px;
   margin-top: -5px;
 }
 
-.main .penulis a {
-  color: salmon;
+.content .penulis a {
   text-decoration: none;
+  color: rgb(164, 127, 123);
 }
 
-.main p {
+.content p {
   margin-bottom: 20px;
   font-size: 14px;
 }
 
-.sidebar {
-  width: 300px;
-  float: right;
-  padding: 20px;
-}
-
-.sidebar h3 {
-  font-weight: bold;
-  color: #666;
-}
-
-.sidebar img {
-  width: 70px;
-  height: 70px;
-  float: left;
-  padding-right: 10px;
-}
-
-.sidebar p {
-  font: 12px/18px arial;
-}
-
 .footer {
-  background-color: #333;
+  background-color: #7a6363;
   padding: 10px;
 }
 
 .footer .copy {
-  color: #eaeaea;
+  color: #f5f5f5;
   text-align: center;
   font-size: 12px;
 }
 
-/* clearfix */
-
-.cf:before,
-.cf:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
-}
-
-.cf:after {
-  clear: both;
-}
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-.cf {
-  zoom: 1;
+.article-img {
+  width: 100%;
+  max-width: 100%;
+  height: 430px;
 }
